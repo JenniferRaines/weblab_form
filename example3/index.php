@@ -7,6 +7,9 @@
     if ($_GET['message'] == "add_success"){
       print "<h1>Your user was added successfully</h1>";
     }
+    if($_GET['message']== 'delete_success'){
+      print "<h1>User number ".$_GET['id']. " has been deleted</h1>";
+    }
   }
   ?>
   <table data-toggle="table" class="table">
@@ -32,6 +35,8 @@
         <td><?php print $row['name']?></td>
         <td><?php print $row['address']?></td>
         <td><?php print $row['phone']?></td>
+        <td><a href="user_form.php?id=<?php print $row['id']?>">edit</a></td>
+        <td><a href="delete_user.php?id=<?php print $row['id']?>">delete</a></td>
       </tr>
 
     <?php
@@ -52,7 +57,7 @@
 
 
 
-      <a href="add_user_form.php">Add a user!</a>
+      <a href="user_form.php">Add a user!</a>
 
 
 </div>
