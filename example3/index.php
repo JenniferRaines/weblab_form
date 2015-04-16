@@ -1,6 +1,14 @@
 <?php include('includes/header.php'); ?>
 
 <div id="wrap">
+
+  <?php
+  if (isset($_GET['message'])){
+    if ($_GET['message'] == "add_success"){
+      print "<h1>Your user was added successfully</h1>";
+    }
+  }
+  ?>
   <table data-toggle="table" class="table">
     <thead>
       <td>id</td>
@@ -41,6 +49,12 @@
 
 
   </table>
+
+
+
+      <a href="add_user_form.php">Add a user!</a>
+
+
 </div>
 <style>
   #wrap { width: 500px; border: 3px dotted blue}
