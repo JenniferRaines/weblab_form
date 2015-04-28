@@ -32,7 +32,7 @@ else {
 
 print $sql . "<br/>";
 
-$conn->query($sql) or die('there was an error!');
+$conn->query($sql) or die(mysqli_error());
 
 
 header("Location: index.php?message=add_success");
