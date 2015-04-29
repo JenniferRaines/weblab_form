@@ -2,13 +2,14 @@
 
 <table class='table'>
 	<tr>
-
 	<% users.forEach(function(el,index){ %>
 	    <tr class="<%= el.evenClass %>">
 				<td><%= index %></td>
+				<td><%= el.id %></td>
 				<td><%= el.name %></td>
 				<td><%= el.address %></td>
 				<td><%= el.phone %></td>
+				<td><a href="#" class="view_user_button" userId="<%= el.id%>">View User</a></td>
 	    </tr>
 	<% });  %>
 </table>
@@ -19,7 +20,7 @@
 
 
 <style>
-	
+
 	table tr.even { background: #ccccff; }
 
 </style>
