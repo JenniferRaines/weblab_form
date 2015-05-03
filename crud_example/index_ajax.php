@@ -2,7 +2,6 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
 
   <title></title>
 
@@ -19,6 +18,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCMwjkeseWVaKHym3Z0E6R1qV5FsMTYGFo"></script>
+
+  <link rel="stylesheet" href="index.css">
 
 
 </head>
